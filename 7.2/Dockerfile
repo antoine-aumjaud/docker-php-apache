@@ -86,7 +86,8 @@ RUN docker-php-ext-enable \
             pdo_sqlsrv \
             redis \
             memcached \
-            opcache 
+            opcache \
+            ssh2
 
 # Install APCu and APC backward compatibility
 RUN pecl install apcu \
