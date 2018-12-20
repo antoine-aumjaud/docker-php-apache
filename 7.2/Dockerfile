@@ -27,6 +27,8 @@ RUN  mkdir /opt/oracle \
     && ln -s /opt/oracle/instantclient_12_1/libocci.so.12.1              /opt/oracle/instantclient_12_1/libocci.so \
     && rm -rf /opt/oracle/*.zip
 
+ENV LD_LIBRARY_PATH /opt/oracle/instantclient_12_1/
+
 # Install PHP extensions deps
 RUN apt-get update \
     && apt-get install --no-install-recommends -y \
