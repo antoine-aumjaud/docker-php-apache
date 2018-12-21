@@ -1,19 +1,16 @@
-Docker: PHP, extensions and Apache
+## Docker: PHP, extensions and Apache
 ==================================
 
 Official [PHP docker image](https://hub.docker.com/_/php/) with additional extensions.
 
-Supported tags
---------------
+### Supported tags
 
 | PHP Version | Tags            |
 | ----------- | --------------- |
 | 7.2.13      | `7.2`, `latest` |
 
-Extensions
-----------
+### Extensions
 
-- iconv
 - intl
 - gd
 - curl
@@ -24,16 +21,16 @@ Extensions
 - xmlwriter
 - sockets
 - zip
-- pgsql
 - mysqli
 - oci8
-- sqlsrv *(PHP 7.0 or above)*
-- pdo_sqlsrv *(PHP 7.0 or above)*
-- pdo_pgsql
+- sqlsrv
+- pdo_sqlsrv
 - pdo_mysql
 - pdo_oci
 - pdo_dblib
 - pdo_sqlite
+- (pdo_pgsql)
+- (pgsql)
 - memcached
 - redis
 - simplexml
@@ -42,8 +39,7 @@ Extensions
 - ftp
 - ssh2
 
-Resources
----------
+### Resources
 
 - composer
 - phpunit

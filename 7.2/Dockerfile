@@ -13,9 +13,6 @@ RUN apt-get update && apt-get install --no-install-recommends -y \
 #RUN wget --quiet -O - https://www.postgresql.org/media/keys/ACCC4CF8.asc | apt-key add -
 
 # Install Oracle Instantclient
-#COPY instantclient-basic-linux.x64-12.1.0.2.0.zip /opt/oracle/instantclient-basic-linux.x64-12.1.0.2.0.zip
-#COPY instantclient-sdk-linux.x64-12.1.0.2.0.zip   /opt/oracle/instantclient-sdk-linux.x64-12.1.0.2.0.zip
-
 RUN  mkdir /opt/oracle \
     && cd /opt/oracle \
     && wget https://raw.githubusercontent.com/bumpx/oracle-instantclient/master/instantclient-basic-linux.x64-12.1.0.2.0.zip  \
@@ -65,7 +62,6 @@ RUN docker-php-ext-configure gd --with-freetype-dir=/usr/include/ --with-jpeg-di
     && pecl install ssh2-1.1.2 
 
 RUN docker-php-ext-install \
-            iconv \
             intl \
             gd \
             mysqli \
