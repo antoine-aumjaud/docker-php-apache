@@ -1,15 +1,17 @@
-## Docker: PHP, extensions and Apache
-==================================
+# Docker: PHP, extensions and Apache
 
 Official [PHP docker image](https://hub.docker.com/_/php/) with additional extensions.
 
-### Supported tags
+## Supported tags
 
-| PHP Version | Tags            |
-| ----------- | --------------- |
-| 7.2.13      | `7.2`, `latest` |
+| PHP Version    | Tags            |
+| -------------- | --------------- |
+| 5.6-soplanning | `5.6-soplanning`|
+| 7.2.13         | `7.2`, `latest` |
 
-### Extensions
+## Extensions
+
+### Version 7.2
 
 - intl
 - gd
@@ -39,7 +41,10 @@ Official [PHP docker image](https://hub.docker.com/_/php/) with additional exten
 - ftp
 - ssh2
 
-### Resources
+### Version 5.6
+
+
+## Resources
 
 - composer
 - phpunit
